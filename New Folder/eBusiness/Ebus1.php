@@ -3,7 +3,7 @@
     <head>
         <title>Select Product</title>
         <!--jQuery-->
-        <script src= "https://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type= "text/javascript" src="cost_calc.js"></script>
         
     </head>
@@ -15,14 +15,14 @@
         
         <form method= "POST" action="Ebus2.php"
         <label for "salesforce">
-            <input type="radio" id="salesforce" name="product" checked onClick= "disabledbtnProceed()"/>
+            <input type="radio" id="salesforce" name="product" checked onClick= "disablebtnProceed()"/>
             SalesForce @$100
             </label>
                 
                 <br/>
             
                   <label for "aws">
-            <input type="radio" id="aws" name="product"  onClick= "disabledbtnProceed()"/>
+            <input type="radio" id="aws" name="product"  onClick= "disablebtnProceed()"/>
             AWS @$300
             </label>
                 
@@ -42,12 +42,12 @@
             
             <br/>
             
-            <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            <button type="submit" id="btnProceed" disable>Add to Shopping Cart</button>
         </form>
         
         <br/>
-        <button onClick="calSub()">Calculate Cost</button>
-        <a role="button" href="Ebus1.php">Clear CHoice</a>
+        <button onClick="calcSub()">Calculate Cost</button>
+        <a role="button" href="Ebus1.php">Clear Choice</a>
 
             
     </body>
