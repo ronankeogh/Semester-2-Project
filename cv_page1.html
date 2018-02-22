@@ -2,21 +2,130 @@
 <html>
     <head>
         <!--Adding Bootstrap-->
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <title>Personal</title>
         
-        <link rel= "Stylesheet" href="mystylesheet.css" type="text/css" />
+        
     </head>
+    
+ <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #999966;
+}
+
+
+.button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+div.container {
+    width: 100%;
+    border: 1px white;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
     <body>
-        <h1 class = "mainheading"> Personal Details </h1>
-        <p><strong> Name:</strong> Ronan Keogh </p>
+                     <ul>
+   <li><a href="Homepage.html"> Home</a></li>                      
+  <li><a class="active" href="cv_page1.html">Curriculum Vitae</a></li>
+  <li><a href="sports.html">Interests</a></li>
+  <li><a href="Ebus1.php">Shop</a></li>
+  
+</ul>
+ <div class="container">
+
+<header>
+   <h1>Personal Details</h1>
+</header>
+  
+
+
+<article>
+  <h1>About me</h1>
+   <p><strong> Name:</strong> Ronan Keogh </p>
         <p> <Strong>Address:</Strong>Model Farm Road, Cork</p>
         <p> <Strong>Phone:</Strong> 087123456 </p>
         <p> <strong>Email:</strong> bisbigboy@umail.com </p>
-        <a href= "cv_page2.html">Next </a>
+</article>
+<nav>
+  <ul>
+   <li><a href="cv_page2.html">Next</a></li>
+   
+  </ul>
+</nav>
+
+
+</div>
+        
         
     </body>
 </html> 
