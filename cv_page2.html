@@ -1,26 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel= "Stylesheet" href="homepagecss.css"  type="text/css"/>
+            <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #808080;
+}
+
+.box{
+    position:absolute;
+    left:23%;
+}
+
+.button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+ </style>
+
         <!--Adding Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <title>Education</title>
-        <link rel= "Stylesheet" href="mystylesheet.css" type="text/css" />
+        
+        
+        
+        
     </head>
     <body>
-        <h1 class = "mainheading"> Educational Details </h1>
-        <p> <strong>College:</strong>UCC </p>
-        <p> <Strong>Course:</Strong>BIS</p>
-        <p> <Strong>Year:</Strong> 2017-2021 </p>
         
+                             <ul>
+   <li><a href="Homepage.html"> Home</a></li>                      
+  <li><a class="active" href="cv_page1.html">Curriculum Vitae</a></li>
+  <li><a href="sports.html">Interests</a></li>
+  <li><a href="Ebus1.php">Shop</a></li>
+  
+    
+  
+</ul>
+
+  <div class="wrapper">
+      
+      <div class="clip-text clip-text_one">Educational Details</div>
+      </div>
+        
+      
+        <p> <strong>College:</strong>University College Cork </p>
+        <p> <Strong>Course:</Strong>Business Infrormation Systems</p>
+        <p> <Strong>Year:</Strong> 2017-2021 </p>
+    
          <br/>
          
         <p> <strong>Secondary School:</strong> Christians Brothers College </p>
         <p> <Strong>Year:</Strong>2012-2017 </p>
+        
+        <br/>
          
-        <a href= "cv_page3.html"> Next </a>
+        <div class="box">
+  <a href="cv_page1.html" class=button>Back</a>  
+  <a href="cv_page3.html" class=button>Next</a>
+ </div>
         
     </body>
 </html>

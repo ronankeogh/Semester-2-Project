@@ -2,6 +2,7 @@
 <html>
     <head>
         <!--Adding Bootstrap-->
+        <link rel="Stylesheet" href="homepagecss.css"  type="text/css" >
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -13,6 +14,7 @@
     </head>
     
  <style>
+    
 ul {
     list-style-type: none;
     margin: 0;
@@ -28,7 +30,7 @@ li {
 
 li a {
     display: block;
-    color: #000;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,8 +42,9 @@ li a:hover:not(.active) {
 
 li a.active {
     color: white;
-    background-color: #999966;
+    background-color: #808080;
 }
+
 
 
 .button {
@@ -92,6 +95,10 @@ article {
     padding: 1em;
     overflow: hidden;
 }
+.box{
+    position:absolute;
+    left:23%;
+}
 </style>
     <body>
                      <ul>
@@ -101,11 +108,14 @@ article {
   <li><a href="Ebus1.php">Shop</a></li>
   
 </ul>
+
+      <div class="wrapper">
+      
+      <div class="clip-text clip-text_one">Personal Details</div>
+      </div>
  <div class="container">
 
-<header>
-   <h1>Personal Details</h1>
-</header>
+
   
 
 
@@ -116,12 +126,16 @@ article {
         <p> <Strong>Phone:</Strong> 087123456 </p>
         <p> <strong>Email:</strong> bisbigboy@umail.com </p>
 </article>
-<nav>
-  <ul>
-   <li><a href="cv_page2.html">Next</a></li>
+
+ <br>
+ 
+ <div class="box">
+  <a href="Homepage.html" class=button>Home</a>  
+  <a href="cv_page2.html" class=button>Next</a>
+ </div>
    
-  </ul>
-</nav>
+
+
 
 
 </div>

@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+                    <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #808080;
+}
+</style>
         <!--Adding Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -10,6 +41,14 @@
         <link rel= "Stylesheet" href="mystylesheet.css" type="text/css" />
     </head>
     <body>
+        
+                             <ul>
+   <li><a href="Homepage.html"> Home</a></li>                      
+  <li><a class="active" href="cv_page1.html">Curriculum Vitae</a></li>
+  <li><a href="sports.html">Interests</a></li>
+  <li><a href="Ebus1.php">Shop</a></li>
+  
+</ul>
         <h1 class = "mainheading"> Work Experience </h1>
         <p> <strong>Company:</strong>ABC Bread Company </p>
         <p> <Strong>Job Title:</Strong>Bread Seller</p>
