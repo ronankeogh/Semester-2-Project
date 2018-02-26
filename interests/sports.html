@@ -1,20 +1,70 @@
 <html>
     <head>
-        <link rel="Stylesheet" href="homepagecss.css" type="text/css" />
+        
         
         <!--Adding Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
         <title>Personal</title>
         
+        <link rel="Stylesheet" href="../homepagecss.css" type="text/css" />
         
-        <link rel= "Stylesheet" href="mystylesheet.css" type="text/css" />
-      
     </head>
     
     <style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    
+    
+    
 ul {
     list-style-type: none;
     margin: 0;
@@ -44,8 +94,22 @@ li a.active {
     color: white;
     background-color: #808080;
 }
+
+.button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
    </style>
     <body>
+   
         
         <ul>
  <li><a href="../Homepage.html">Home</a></li>
@@ -54,20 +118,66 @@ li a.active {
   <li><a href="../Ebusiness/Ebus1.php">Shop</a></li>
   </ul>
   
-       <div class="wrapper">
-      
-      <div class="clip-text clip-text_one">Sport</div>
+  
+  
+  
+               <div class="wrapper">
+      <div class="clip-text clip-text_one">Sports</div>
       </div>
       
- 
+      
   
-  
-        
         <p><strong> Favourite Sport:</strong> Rugby </p>
-        <p> <Strong>Training:</Strong> Twice a week</p>
+        <p><Strong> Teams affliated with:</strong>Highfield RFC (2003-2011) , Christians Brothers College (2010-2017), University College Cork RFC (2017- present)</p>
+        <p><Strong> Notable Achievements:</Strong>Won the McCarthy Cup (2012) , Won the Bowen Shield in (2016)</p>
+        <p><Strong>Current Training:</Strong>Every Tuesday & Thursday</p>
         
-        <a href="travel.html" class ="btn btn-dark">Next </a>
+        
+        
+        <br>
+        
+        <div class="responsive">
+  <a target="_blank" href="https://pbs.twimg.com/media/CVx_KJwWwAApvfF.jpg">
+    <img src="https://pbs.twimg.com/media/CVx_KJwWwAApvfF.jpg"  width="300" height="200">
+  </a>
+  <div class="desc"> Christian Brothers College V Crescent Comprehensive College</div>
+</div>
+
+<div class="responsive">
+  <a target="_blank" href="https://pbs.twimg.com/media/CUvQVadXAAALCfJ.jpg">
+    <img src="https://pbs.twimg.com/media/CUvQVadXAAALCfJ.jpg" width="300" height="200">
+  </a>
+  
+  <div class="desc"> Christian Brothers College V Presentation Brothers College</div>
+</div>
+
+<div class="responsive">
+  <a target="_blank" href="https://pbs.twimg.com/media/CVzBHcLWcAEb-va.jpg">
+    <img src="https://pbs.twimg.com/media/CVzBHcLWcAEb-va.jpg"  width="300" height="200">
+  </a>
+  <div class="desc">Bowen Shield Winning Squad</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <div class="box">
+  <a href="Homepage.html" class=button>Home</a>  
+  <a href="travel.html" class=button>Travel</a>
+ </div>
      
-        
+   
+      
+    
     </body>
 </html>
