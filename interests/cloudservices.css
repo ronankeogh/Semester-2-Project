@@ -1,0 +1,38 @@
+#section1{
+    background-image: url("https://www.berbay.com/wp/wp-content/uploads/2015/09/Professional-Development.jpg");
+       color: black;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+#section2{
+           background-image: url("https://s3.amazonaws.com/ckl-website-static/wp-content/uploads/2015/09/cloud42-1280x680.jpeg");
+       color: black;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+#section3{
+             background-image: url("http://www.alcortech.com/wp3/wp-content/uploads/2016/08/Cloud.jpg");
+       color: black;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+#section4{
+              background-image: url("http://www.contegix.com/wp-content/uploads/2015/08/Question-Mark-CLOUDS.jpg");
+       color: black;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+.section{
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    z-index: 1;
+    position: absolute;
+    top: 65%;
+    left: 46%;
+}
