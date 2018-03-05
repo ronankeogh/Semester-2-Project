@@ -14,19 +14,35 @@
     
     <form method="PDST" action="Ebus2.php">
         
-        <label for "salesforce">
+        <label for "SalesForce">
             <input type="radio" id="salesforce" name="product" checked onClick="DisablebtnProceed">
             SalesForce @ $100
         </label>
         
         <br/>
         
-        <label for "aws">
-            <input type= "radio" id="aws" name="product" onClick="disablebtnProceed()"/>
-            AWS @ $300
+        <label for "Cloud 9">
+            <input type= "radio" id="Cloud9" name="product" checked onClick="disablebtnProceed()"/>
+            Cloud9  @ $200
         </label>
         
         <br/>
+        
+        <label for "Amazon Web Services">
+               <input type= "radio" id="Amazon Web Services" name="product" checked onClick="disablebtnProceed()"/>
+            Amazon Web Services @ $300
+        </label>
+        
+        
+        <br/> 
+        
+          <label for "Gmail(Google Drive)">
+               <input type= "radio" id="Gmail" name="product" checked onClick="disablebtnProceed()"/>
+            Gmail @ $150
+        </label>
+        
+        
+        
         <br/>
         
     <label for "subtotal">
