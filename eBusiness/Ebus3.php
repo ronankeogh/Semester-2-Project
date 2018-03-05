@@ -4,14 +4,14 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <Title> RECIEPT</Title>
+        <title>Receipt</title>
     </head>
     <body>
-        <h4> RECIEPT</h4>
+        <h4>RECIEPT</h4>
+        
         <?php
-        // Echo session variables that were set on previous page echo "Total is " . $ SESSION["total"] . ".";
+        // Echo session variables that were set on previous page
+        echo "Total is " . $_SESSION["total"] . ".";
         ?>
-        </br>
-        <a HREF="../homepage.html"><input type="button" value="Home"></a>
     </body>
-</html>
+</html>0
