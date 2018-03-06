@@ -1,19 +1,18 @@
 <?php
-// start the session
+//start the session
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Enter Payment Details</title>
-        <link rel="Stylesheet" href="../homepagecss.css" type="text/css" />
+        <title>Payment Details</title>
+        <link rel="Stylesheet" href="homepagecss.css" type="text/css" />
+        
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="Ebus2_validator.js"></script>
     </head>
-            <style>
+           <style>
 ul {
     list-style-type: none;
     margin: 0;
@@ -44,68 +43,53 @@ li a.active {
     background-color: #808080;
 }
 </style>
-    <body>
-                           <ul>
-  <li><a href="../Homepage.html">Home</a></li>
-  <li><a href="../cv_page1.html">Curriculum Vitae</a></li>
-  <li><a href="../interests/sports.html">Interests</a></li>
-  <li><a class="active" href="CloudServicesInfo/CompanyInfo.html">The Cirrus Company & Products</a></li>
-  
-</ul>
- <div class="wrapper">
-      <div class="clip-text clip-text_one">Payment Details</div>
-      
-      <br>
-      
-        <h4>Please enter your payment details</h4>
-        
-        <br>
-        
-        
+<body>
+ 
             <form name = "myForm"  method="POST" action="Ebus3.php">
+                    <br>
+                    <label for = "name">
+                        <strong>  Name:</strong>
+                        <br>
+                        <input type ='text' id ="name" name = "name"/>
+                    </label>
+                    <br><br>
+                    <label for = "email">
+                        <strong> Email:</strong>
+                        <br>
+                        <input type = "email" id ="email" name="email"/>
+                    </label>
+                    <br><br>
+                    
+                    <label for = "user_number">
+                        <strong>Card Number</strong></label>
+                    <br>
+                     <input type = "text" id ="user_number" name="user_number" maxlength="16"/>
+               
+                <br><br>
                 
-   
                     <label for="user_pin"><strong>PIN:</strong></label>
-                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
-                    
-                    
                     <br>
-                    
-                    <label for="creditcardholdername"><strong>Card holder Name:</strong></label>
-                    <input type ="text"     id="creditcardholdername" placeholder="Card holder name">
-                    
-                    
-                    <br>
-                    
-                    <label for "creditcardnumber"><strong>Credit Card Number:</strong></label>
-                    <input type = "password" id="creditcardnumber" placeholder="Credit Card Number" maxlength="16">
-                    
-                    
-                    <br>
-                    
-                    <label for "cvvnumber"><strong>CVV Number:</strong></label>
-                    <input type = "password" id="cvvnumber" placeholder="CVV Number" maxlength="3">
-                    
-                    
-                    <br>
-                    
+                   <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+                    <br><br><br>
                 <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
               
             </form>
+           </div>
             
-            <br/>
+            <br>
             <button onClick="validateDetails()">Validate</button>
-            
+          
             <?php
-            
-            // set session variables
-            $_SESSION["total"] = $_POST["total"];
+            //set session variable 
+            $_SESSION["total"]=$_POST["total"];
+           
             ?>
-       
-        </div>
         
-        <script type="text/javascript" src="Ebus2_validator.js"></script>
+        <script type="text/javascript" src="ebus2_validator.js"></script>
         
-        </div>
+        
     </body>
+    
+    
+    
 </html>

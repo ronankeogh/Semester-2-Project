@@ -16,7 +16,7 @@ function validateDetails(){
         alert("Please enter your PIN");
     }
     
-    else if (String(pin).length < 4){
+    else if (String(pin).length<4){
         alert("Please make sure your PIN is 4 figures long.");
     }
     
@@ -33,12 +33,12 @@ function validateDetails(){
              alert("Please enter the CVV number located on the back of the creditcard")
     }
     
-    else if (String(creditcardnumber).length < 16){
+    else if (String(creditcardnumber).length<16){
              alert("You have entered a card number that is too short, please enter a valid number.")
     }
     
 
-    else if (String(cvvnumber).length < 3){
+    else if (String(cvvnumber).length<3){
              alert("You have entered a CVV number that is too short, please enter a valid CVV number.")
     }
     
