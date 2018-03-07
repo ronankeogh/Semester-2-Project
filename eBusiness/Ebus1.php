@@ -46,7 +46,7 @@ li a.active {
   <li><a href="../Homepage.html">Home</a></li>
   <li><a href="../cv_page1.html">Curriculum Vitae</a></li>
   <li><a href="../interests/sports.html">Interests</a></li>
-  <li><a class="active" href="CloudServicesInfo/CompanyInfo.html">The Cirrus Company & Products</a></li>
+  <li><a class="active" href="../CloudServicesInfo/CompanyInfo.html">The Cirrus Company & Products</a></li>
   
 </ul>
 
@@ -76,7 +76,7 @@ li a.active {
               
               <label for="aws">
                 <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
-                AWS @ $300
+                Amazon Web Services @ $300
               </label>
               
               <br/>
@@ -92,21 +92,21 @@ li a.active {
               <br/>
               
               <label for="subtotal">
-                Sub Total
+                Sub Total $
                 <input type="text" id="subtotal" name="subtotal" value="0.00" readonly/>
               </label>
               
               <br/>
               
               <label for="discount">
-                Discount @ 5%
+                Discount @ 5%: $
                 <input type="text" id="discount" name="discount" value="0.00" readonly/>
               </label>
               
               <br/>
               
               <label for="vat">
-                Vat @ 10%
+                Vat @ 10% : $
                 <input type="text" id="vat" name="vat" value="0.00" readonly/>
               </label>
               
@@ -115,7 +115,7 @@ li a.active {
               
               
               <label for="total">
-                Total
+                Total: $
                 <input type="text" id="total"  name="total" value="0.00" readonly/>
               </label>
     

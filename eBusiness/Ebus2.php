@@ -5,12 +5,15 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+        
         <title>Payment Details</title>
-        <link rel="Stylesheet" href="homepagecss.css" type="text/css" />
+        
+        <link rel="Stylesheet" href="../homepagecss.css" type="text/css" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../eBusiness/Ebus2_validator.js"></script>
         
         
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
     </head>
            <style>
 ul {
@@ -42,28 +45,49 @@ li a.active {
     color: white;
     background-color: #808080;
 }
+
+.box{
+    position:absolute;
+    left:48.5%;
+}
 </style>
 <body>
+    
+                       <ul>
+  <li><a href="../Homepage.html">Home</a></li>
+  <li><a href="../cv_page1.html">Curriculum Vitae</a></li>
+  <li><a href="../interests/sports.html">Interests</a></li>
+  <li><a class="active" href="../CloudServicesInfo/CompanyInfo.html">The Cirrus Company & Products</a></li>
+  
+</ul>
+
+<div class="wrapper">
+      <div class="clip-text clip-text_one">Payments Details</div>
  
             <form name = "myForm"  method="POST" action="Ebus3.php">
                     <br>
+                    
                     <label for = "name">
                         <strong>  Name:</strong>
                         <br>
-                        <input type ='text' id ="name" name = "name"/>
+                        <input type ='text' id ="name" placeholder="Name" name = "name"/>
                     </label>
+                    
                     <br><br>
+                    
                     <label for = "email">
                         <strong> Email:</strong>
                         <br>
-                        <input type = "email" id ="email" name="email"/>
+                        <input type = "email" id ="email" name="email" placeholder="Email"/>
                     </label>
+                    
                     <br><br>
                     
                     <label for = "user_number">
                         <strong>Card Number</strong></label>
                     <br>
-                     <input type = "text" id ="user_number" name="user_number" maxlength="16"/>
+                     <input type = "text" id ="user_number" name="user_number" placeholder="Card Number" maxlength="16"/>
+                     
                
                 <br><br>
                 
@@ -71,13 +95,21 @@ li a.active {
                     <br>
                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
                     <br><br><br>
+                    
+                    
                 <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
               
             </form>
            </div>
             
             <br>
+            
+            <div class=box>
             <button onClick="validateDetails()">Validate</button>
+            </div>
+            
+            </div>
+            
           
             <?php
             //set session variable 
@@ -85,7 +117,11 @@ li a.active {
            
             ?>
         
-        <script type="text/javascript" src="ebus2_validator.js"></script>
+            
+            
+            
+            
+            
         
         
     </body>
