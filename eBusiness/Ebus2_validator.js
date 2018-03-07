@@ -2,12 +2,15 @@
 
 function validateDetails(){
     
+    var name;
     var pin;
     var number;
+    var email;
     
-    pin = document.getElementById("user_number").value;
+    name = document.getElementById("name").value;
+    number = document.getElementById("user_number").value;
     pin = document.getElementById("user_pin").value;
-    
+    email = document.getElementById("email").value
     if (pin==""){
         alert("Please enter your PIN");
         }
@@ -23,13 +26,29 @@ function validateDetails(){
         
       
     
-     if (String(pin).length<16){
+     if (String(number).length<16){
         alert("Please enter a valid card number");
         }
    
     else{
         enablebtnPurchase();
         }
+        
+          if (name==""){
+        alert("Please enter your name");
+    }
+    
+    else{
+        enablebtnPurchase();
+    }
+    
+      if (email==""){
+        alert("Please enter your email");
+    }
+    
+    else{
+        enablebtnPurchase();
+    }
 }
 
 
@@ -37,19 +56,19 @@ function validateDetails(){
 
 
 function validateName(){
- var name;
+    
+    var name;
     
     name = document.getElementById("name").value;
     
     if (name==""){
         alert("Please enter your name");
-        }
-  
+    }
+    
     else{
         enablebtnPurchase();
-        }
-        
-}      
+    }
+}    
 
 
 
@@ -59,6 +78,3 @@ function enablebtnPurchase(){
 
 
 
-function disablebtnPurchase(){
-     $('#btnPurchase').prop('disabled',true);
-}

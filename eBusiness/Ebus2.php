@@ -78,7 +78,7 @@ li a.active {
                     <label for = "email">
                         <strong> Email:</strong>
                         <br>
-                        <input type = "email" id ="email" name="email" placeholder="Email"/>
+                        <input type = 'text' id ="email" name="email" placeholder="Email"/>
                     </label>
                     
                     <br><br>
